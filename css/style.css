@@ -1,1 +1,14 @@
+/* IMPORTAZIONI VARIABILI */
 @import "variables.css";
+
+header{
+    height: 70px;
+}
+
+
+main .-ms-aside{
+    height: calc(100vh - 70px) ;
+    background-color: red;
+    max-width: 300px;
+}
+
