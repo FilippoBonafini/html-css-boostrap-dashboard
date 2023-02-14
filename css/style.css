@@ -4,6 +4,9 @@
 header{
     background-color: green;
     overflow: hidden;
+    height: 70px;
+    display: flex;
+    align-items: center;
 }
 
 aside ul{
@@ -12,11 +15,11 @@ aside ul{
 }
 
 .ms-content{
-    height: calc(100vh - 55.98px);
+    height: calc(100vh - 70px);
     background-color: red;
 }
 
 .-ms-aside {
-    height: calc(100vh - 55.98px);
+    height: calc(100vh - 70px);
     background-color: yellow;
 }
