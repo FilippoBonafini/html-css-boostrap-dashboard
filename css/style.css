@@ -2,13 +2,16 @@
 @import "variables.css";
 
 header{
-    height: 70px;
+    background-color: green;
+    overflow: hidden;
 }
 
-
-main .-ms-aside{
-    height: calc(100vh - 70px) ;
+.ms-content{
+    height: calc(100vh - 55.98px);
     background-color: red;
-    max-width: 300px;
 }
 
+.-ms-aside {
+    height: calc(100vh - 55.98px);
+    background-color: yellow;
+}
