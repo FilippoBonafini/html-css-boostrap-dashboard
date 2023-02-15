@@ -23,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg flex-grow-1">
             
-            <div class="container-fluid">
+            <div class="container-fluid" style="background-color: white;">
 
                 <!-- LOGHI PRINCIPALI HEADER  --->    
                 <div>
@@ -36,14 +36,17 @@
 
                 <!-- BARRA DI RICERCA HEADER  --->
                 <div class="flex-grow-1">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text pe-2 border-end-0 -ms-serch" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control  border-start-0 -ms-serch" placeholder="Prova a cercare: Lezioni di Laraver" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
                 </div>
                 <!-- /BARRA DI RICERCA HEADER  -->
 
                 <!------------------------------->
 
                 <!-- MENU A ICONE HEADER  ------->
-                <div>
+                <div class=" -ms-icone-header">
                     <div class="d-none d-md-inline-block">
                         <a href="#"><i class="fa-solid fa-list-ul"></i></a>
                         <a href="#"><i class="fa-solid fa-circle-question"></i></a>
@@ -67,21 +70,21 @@
 
 
             <!-- BARRA LATERALE -->
-            <aside class="col-auto -ms-aside d-flex flex-column justify-content-between -ms-aside py-3 ps-3 pe-md-5 pe-3">
+            <aside class="col-auto -ms-aside d-flex flex-column justify-content-between -ms-aside pt-3 pe-md-5 pe-3">
                 <ul>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-house"></i><span class=" d-none d-md-inline">Home</span></a>
+                    <li class="pb-3">
+                        <a href="#"><i class="fa-solid fa-house d-flex justify-content-center d-md-inline-block pb-2 pt-2" style="width: 40px"></i><span class=" d-none d-md-inline">Home</span></a>
                     </li>
+                    <li class="pb-3">
+                        <a href="#"><i class="fa-solid fa-chart-simple d-flex justify-content-center d-md-inline-block pb-2 pt-2" style="width: 40px"></i><span class=" d-none d-md-inline">Stats</span></a>
+                    </li class="pb-3">
                     <li>
-                        <a href="#"><i class="fa-solid fa-chart-simple"></i><span class=" d-none d-md-inline">Stats</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-signal"></i><span class=" d-none d-md-inline">Signals</span></a>
+                        <a href="#"><i class="fa-solid fa-signal d-flex justify-content-center d-md-inline-block pb-2 pt-2" style="width: 40px"></i><span class=" d-none d-md-inline">Signals</span></a>
                     </li>
                 </ul>
                 <ul>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-gear"></i><span class=" d-none d-md-inline">Settings</span></a>
+                    <li class="">
+                        <a href="#"><i class="fa-solid fa-gear d-flex justify-content-center d-md-inline-block pb-2 pt-2" style="width: 40px; line-height: 40px;"></i><span class=" d-none d-md-inline">Settings</span></a>
                     </li>
                 </ul>
             </aside>
@@ -94,7 +97,30 @@
 
                     <!-- INTESTAZIONE MAIN  -->
                     <div class="col-12 -ms-isntestazione-main">
-                        ciaooooooooooooooooooooooooooooooooooooo
+                        <div class="row px-2 py-4 text-white">
+                            <div class="col-12 col-md-3 order-md-3">
+                                <span>Nuovo studente</span>
+                                <button class="btn btn-outline-light ms-2"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="col-12 col-md-6 order-md-3 py-4 py-md-0">
+                                <div class="pb-2">
+                                    <span class="h2 pe-2">Boolean</span>
+                                    <span class="badge rounded-pill fs-6 fw-normal">Primary</span>
+                                </div>
+                                <div>
+                                    <span class="badge rounded-pill fs-6 fw-normal">Primary</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    <span class="badge rounded-pill fs-6 fw-normal d-lg-none"><i class="fa-solid fa-plus"></i></span> 
+                                    <span class="badge rounded-pill fs-6 fw-normal d-none d-lg-inline-block">Primary</span>
+                                    <span class="badge rounded-pill fs-6 fw-normal d-none d-lg-inline-block">Primary</span>
+                                    <span class="badge rounded-pill fs-6 fw-normal d-none d-lg-inline-block">Primary</span>                                   
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 order-md-2">
+                                <div class="fs-6">Studenti online negli ultimi 30 minuti</div>
+                                <div class="fs-2 pt-2">125</div>
+                            </div>
+                        </div>
                     </div>
                     <!-- /INTESTAZIONE MAIN  -->
 
@@ -234,7 +260,7 @@
                                 <!-- /CHECKS  -->
                                 <!-- -------- -->
                                 <!-- CARD  ----->
-                                <div class="card  mt-4">
+                                <div class="card  mt-4 mb-4">
                                     <img src="img/stats.jpeg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                       <h5 class="card-title">Card title</h5>
