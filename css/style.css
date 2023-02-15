@@ -68,3 +68,13 @@ table i{
         width: 40% !important;
     }
 }
+
+aside li{
+    padding: 4px;
+}
+
+aside li:hover{
+    background-color: rgba(0, 0, 0, 0.529);
+    border-radius: 5px;
+}
+
