@@ -23,3 +23,7 @@ aside ul{
     height: calc(100vh - 70px);
     background-color: yellow;
 }
+
+.-ms-isntestazione-main{
+    background-color: blue;
+}
