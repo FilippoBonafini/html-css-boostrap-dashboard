@@ -1,64 +1,98 @@
-/* IMPORTAZIONI VARIABILI */
-@import "variables.css";
 
+/* ------  */
+/* HEADER  */
+/* ------  */
 header{
     background-color: #f8f9fa;
-    height: 70px;
+    height: 4.375rem;
     display: flex;
     align-items: center;
 }
 
-aside ul{
-    list-style: none;
-    padding:0;
-}
-
-.ms-content{
-    height: calc(100vh - 70px);
-    background-color: #f8f9fa;
-}
-
-.-ms-aside {
-    height: calc(100vh - 70px);
-    background-image: url("../img/sidebar-bg.png");
-    background-color: #142b40;
-}
-
-.-ms-isntestazione-main{
-    background-color: #1b72e8;
-}
-.-ms-isntestazione-main .badge{
-    background-color: #165bba;
-}
-
-aside a{
-    font-size: 1.4rem;
-    text-decoration: none;
-    color: white ;
-}
-
 header a{
-    font-size: 20px;
-    padding: 0 10px;
+    font-size: 1.25rem;
+    padding: 0 .625rem;
     color: #5b5858;
 }
 
 header a .fa-bell{
     color: #ff8f00;
 }
+
 header .-ms-icone-header{
-    margin-left: 10px;
+    margin-left: .625rem;
 }
 
 header .-ms-serch{
-    height: 50px;
+    height: 3.125rem;
     background-color: #e5e5e5;
 }
 
-table i{
-    font-size: 13px;
+
+
+
+
+/* --------------- */
+
+
+
+
+/* ----- */
+/* MAIN  */
+/* ----- */
+
+/* ASIDE  */
+aside ul{
+    list-style: none;
+    padding:0;
+}
+.-ms-aside {
+    height: calc(100vh - 4.375rem);
+    background-image: url("../img/sidebar-bg.png");
+    background-color: #142b40;
+}
+aside a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white ;
+}
+/* /ASIDE  */
+
+
+
+/* INSTESTAZIONE MAIN  */
+.-ms-isntestazione-main{
+    background-color: #1b72e8;
 }
 
+.-ms-isntestazione-main .badge{
+    background-color: #165bba;
+}
+/* /INTESTAZIONE MAIN  */
+
+
+
+.ms-content{
+    height: calc(100vh - 4.375rem);
+    background-color: #f8f9fa;
+}
+
+
+
+/* ASIDE  */
+aside li{
+    padding: .25rem;
+}
+
+aside li:hover{
+    background-color: rgba(0, 0, 0, 0.529);
+    border-radius: .3125rem;
+}
+/* /ASIDE  */
+
+
+
+/* OFFCANVAS  */
 .offcanvas{
     width: 100% !important ; 
 }
@@ -68,13 +102,34 @@ table i{
         width: 40% !important;
     }
 }
+/* /OFFCANVAS  */
 
-aside li{
-    padding: 4px;
-}
 
-aside li:hover{
-    background-color: rgba(0, 0, 0, 0.529);
-    border-radius: 5px;
+
+/* TABELLA  */
+table i{
+    font-size: .8125rem;
 }
+/* /TABELLA  */
+
+
+
+/* --------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
