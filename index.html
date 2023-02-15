@@ -17,7 +17,7 @@
     <!-- MIO STILE -->
     <link rel="stylesheet" href="css/style.css">    
 </head>
-<body class="overflow-hidden">
+<body>
 
     <!-- HEADER  -->
     <header>
@@ -51,20 +51,20 @@
                         <a href="#"><i class="fa-solid fa-list-ul"></i></a>
                         <a href="#"><i class="fa-solid fa-circle-question"></i></a>
                         <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>                        
-                    </div>
-                    <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown link
+                    </div>  
+                    <div class="btn-group">
+                        <a type="button" class="" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
                         </a>
-                      
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <ul class="dropdown-menu dropdown-menu-end show" aria-labelledby="bd-theme" style="--bs-dropdown-min-width: 8rem;" data-bs-popper="static">
+                          <li><button class="dropdown-item" type="button">Profilo</button></li>
+                          <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                          <li><button class="dropdown-item" type="button">Logout</button></li>
                         </ul>
-                      </div>
-                    
+                    </div>        
+                      
                 </div>
+                
                 <!-- /MENU A ICONE HEADER  ----->
 
             </div>            
@@ -75,7 +75,7 @@
     <!-------------------------------------------------->
 
     <!-- MAIN  -->
-    <main class="container-fluid">
+    <main class="container-fluid overflow-hidden">
         <div class="row">
 
 
@@ -111,7 +111,18 @@
                         <div class="row px-2 py-4 text-white">
                             <div class="col-12 col-md-3 order-md-3">
                                 <span>Nuovo studente</span>
-                                <button class="btn btn-outline-light ms-2"><i class="fa-solid fa-plus"></i></button>
+                                
+                                <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas righdasdasdasdasdasdasdasdasdasdas</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-12 col-md-6 order-md-1 py-4 py-md-0">
                                 <div class="pb-2">

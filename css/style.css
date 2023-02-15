@@ -3,7 +3,6 @@
 
 header{
     background-color: #f8f9fa;
-    overflow: hidden;
     height: 70px;
     display: flex;
     align-items: center;
@@ -58,4 +57,8 @@ header .-ms-serch{
 
 table i{
     font-size: 13px;
+}
+
+.offcanvas{
+    width: 90%;
 }
