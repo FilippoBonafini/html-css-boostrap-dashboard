@@ -116,11 +116,90 @@
 
                                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                     <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas righdasdasdasdasdasdasdasdasdasdas</h5>
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
-                                        
+                                        <form action="post">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="mb-3">
+                                                        <label for="nome" class="form-label">Nome</label>
+                                                        <input type="text" class="form-control" id="nome" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="mb-3">
+                                                        <label for="cognome" class="form-label">Cognome</label>
+                                                        <input type="text" class="form-control" id="cognome" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <label for="cognome" class="form-label">E-mail</label>
+                                                    <div class="input-group mb-3">                                                       
+                                                        <div class="input-group-text">@</div>
+                                                        <input type="email" class="form-control" id="autoSizingInputGroup" required>
+                                                      </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="mb-3">
+                                                        <label for="pass" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="pass" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="mb-3">
+                                                        <label for="indirizzo" class="form-label">Indirizzo</label>
+                                                        <input type="text" class="form-control" id="indirizzo" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="mb-3">
+                                                        <label for="citta" class="form-label">Città</label>
+                                                        <input type="text" class="form-control" id="citta" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-4">
+                                                    <label for="citta" class="form-label">Stato</label> 
+                                                    <div class="input-group mb-3">
+                                                       
+                                                        <select class="form-select" id="inputGroupSelect01">
+                                                          <option selected>Scegli...</option>
+                                                          <option value="1">Italia</option>
+                                                          <option value="2">Francia</option>
+                                                          <option value="3">Spagna</option>
+                                                        </select>
+                                                      </div>
+                                                </div>
+                                                <div class="col-12 col-lg-2">
+                                                    <div class="mb-3">
+                                                        <label for="cap" class="form-label">CAP</label>
+                                                        <input type="number" class="form-control" id="cap" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="mb-3">
+                                                        <label for="foto" class="form-label">Foto</label>
+                                                        <input type="file" class="form-control" id="foto" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 py-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                          Seleziona per proseguire
+                                                        </label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="col-auto">
+                                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                                        <button type="reset" class="btn btn-warning">Svuota</button>
+                                                    </div>                                                    
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
